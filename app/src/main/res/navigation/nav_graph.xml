@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.sajin.virginmoneyapp.presentation.main.view.MainFragment"
+        android:label="Virgin Money">
+        <action
+            android:id="@+id/action_mainFragment_to_profileDetailsFragment"
+            app:destination="@id/peopleDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/peopleDetailsFragment"
+        android:name="com.sajin.virginmoneyapp.presentation.people.view.PeopleDetailsFragment"
+        android:label="User Details"
+        tools:layout="@layout/fragment_people_details">
+        <action
+            android:id="@+id/action_profileDetailsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="peopleModel"
+            app:argType="com.sajin.virginmoneyapp.domain.model.Result"
+            app:nullable="true" />
+    </fragment>
+</navigation>

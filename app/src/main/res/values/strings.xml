@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">VirginMoneyApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my">My</string>
+    <string name="profile">Profile</string>
+    <string name="date">Date</string>
+    <string name="title_people">People</string>
+    <string name="title_rooms">Rooms</string>
+    <string name="title_profile_details">Profile</string>
+</resources>
